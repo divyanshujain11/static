@@ -1,140 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <a href="#">
-            <img src="image/workflow-mark-indigo-600.svg" alt="">
-        </a>
-        <div class="nav1">
-            <a href="#">Feature</a>
-            <a href="#">Pricing</a>
-            <a href="#">Market Place</a>
-            <a href="#">Company</a>
-            <a href="#">Log in</a>
-        </div>
-        <div class="nav-left1">
-           <div id="side-nav">
-           <ul>
-            <li><a href=""></a>Feature</li>
-            <li><a href=""></a>PricingPricing</li>
-            <li><a href=""></a>Market Place</li>
-            <li><a href=""></a>Company</li>
-            <li><a href=""></a>Log in</li>
-           </ul>  
-           </div>
-           <div id="menu">
-            <img src="image/menu.png" id="menu-btn">
-        </div>
-        </div>
-        
-    </nav>
-    <section id="nav-next">
-        <div class="nav-next1">
-            <div class="nav-next2">
-                <h1>Data to enrich your <br> <span> online business</span></h1>
-                <p>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua</p>
-                <div class="nav-nextbtn">
-                    <a href="#">Get Started</a>
-                    <span><a href="#">Live demo</a></span>
-                </div>
+<div></div>
+<style>
+    body{
+        background: #6592cf;
+    }
+    div{
+        width: 150px;
+        height: 105px;
+        background: #243d83;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        left: 50%;
+        bottom: 62%;
+        transform: translateX(-50%);
 
-            </div>
-            <div></div>
-        </div>
-        <div class="nav-next2">
-            <img src="image/photo-1551434678-e076c223a692.webp" alt="">
-        </div>
-    </section>
-    <section id="price">
-        <div class="price1">
-            <h1>Pricing Plans</h1>
-        <p>Start building for free, then add a site plan to go live. Account plans unlock additional features.</p>
-        <div class="price1-sub">
-            <button>Monthly</button>
-            <span><button>Yearly</button></span>
-        </div>
-        </div>
-        <div class="price2">
-            <div class="price2-new">
-                <h1>Hobby</h1>
-                <p>All the basic for starting a bussiness</p>
-                <p><span>$12</span>/mo</p>
-                <button>Buy Hobby</button>
-                <hr>
-                <span><p>WHAT'S INCLUDED</p></span>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-            </div>
-            <div class="price2-new">
-                <h1>Hobby</h1>
-                <p>All the basic for starting a bussiness</p>
-                <p><span>$12</span>/mo</p>
-                <button>Buy Hobby</button>
-                <hr>
-                <span><p>WHAT'S INCLUDED</p></span>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-            </div>
-            <div class="price2-new">
-                <h1>Hobby</h1>
-                <p>All the basic for starting a bussiness</p>
-                <p><span>$12</span>/mo</p>
-                <button>Buy Hobby</button>
-                <hr>
-                <span><p>WHAT'S INCLUDED</p></span>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-            </div>
-            <div class="price2-new">
-                <h1>Hobby</h1>
-                <p>All the basic for starting a bussiness</p>
-                <p><span>$12</span>/mo</p>
-                <button>Buy Hobby</button>
-                <hr>
-                <span><p>WHAT'S INCLUDED</p></span>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-                <div class="relative">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<script>
-var sidenav = document.getElementById("side-nav");
-var menubtn = document.getElementById("menu-btn");
-var menu = document.getElementById("menu");
-sidenav.style.right="-250px";
-menubtn.onclick = function(){
-    if(sidenav.style.right=="-250px"){
-        sidenav.style.right="0";
-        menu.src="image/close.png";
     }
-    else{
-        sidenav.style.right="-250px";
-        menu.src="image/menu.png";
+    :before,:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
     }
-}
-</script> 
-</body>
-</html>
+    div:before{
+        width: 100px;
+        height: 10px;
+        border-radius: 10px;
+        background: #eebb50;
+    }
+    div:after{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px 10px 0 0;
+        background: #eebb50;
+        bottom: 0;
+    }
+    body:before{
+        border-width: 0 100px 100px;
+        border-style: solid;
+        border-color: transparent transparent #243d83;
+        top: 50px;
+    }
+</style>
